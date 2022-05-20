@@ -4,7 +4,7 @@ function getSchedule(scheduleTarget) {
   if (!scheduleTarget) {
     const time = Object.entries(data.hours);
     const [dayOne, timeWork] = time;
-    return `${day}${timeWork}`;
+    return `${dayOne}${timeWork}`;
   }
 
   return data.species.find(({ name }) => scheduleTarget === name).availability;
