@@ -16,7 +16,6 @@ function countAnimals(animal) {
   if (specie) {
     return data.species.find(({ name }) => name === specie).residents.length;
   }
-
 }
 
 module.exports = countAnimals;
